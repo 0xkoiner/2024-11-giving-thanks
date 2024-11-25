@@ -1,0 +1,3 @@
+slither-analyzer
+solc-select
+setuptools

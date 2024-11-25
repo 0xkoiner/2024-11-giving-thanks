@@ -1,0 +1,19 @@
+Ran 10 tests for test/GivingThanks.t.sol:GivingThanksTest
+[PASS] testCannotDonateToUnverifiedCharity() (gas: 53571)
+[PASS] testCharityRegistryChangeAdminWithAdmin() (gas: 20954)
+[PASS] testCharityRegistryChangeAdminWithAdminRevert() (gas: 16773)
+[PASS] testCharityVerifyCharityAdminWithAdmin() (gas: 64488)
+[PASS] testCharityVerifyCharityAdminWithAdminRevert() (gas: 41014)
+[PASS] testCharityVerifyCharityAdminWithAdminRevertNotRegisteredCharities() (gas: 19061)
+[PASS] testDonate() (gas: 303370)
+[PASS] testFuzzDonate(uint96) (runs: 257, μ: 306479, ~: 305335)
+[PASS] testGivingThanksCreateTokenURIReturnCorrectValues() (gas: 349021)
+[PASS] testGivingThanksUpdateRegistryNotProtected() (gas: 20592)
+Suite result: ok. 10 passed; 0 failed; 0 skipped; finished in 165.03ms (184.87ms CPU time)
+
+Ran 1 test suite in 165.37ms (165.03ms CPU time): 10 tests passed, 0 failed, 0 skipped (10 total tests)
+| File                    | % Lines         | % Statements    | % Branches    | % Funcs       |
+|-------------------------|-----------------|-----------------|---------------|---------------|
+| src/CharityRegistry.sol | 100.00% (8/8)   | 100.00% (8/8)   | 100.00% (6/6) | 100.00% (5/5) |
+| src/GivingThanks.sol    | 100.00% (14/14) | 100.00% (17/17) | 75.00% (3/4)  | 100.00% (4/4) |
+| Total                   | 100.00% (22/22) | 100.00% (25/25) | 90.00% (9/10) | 100.00% (9/9) |

@@ -20,19 +20,27 @@ contract GivingThanks is ERC721URIStorage {
 
     function donate(address charity) public payable {
         require(registry.isVerified(charity), "Charity not verified");
-        (bool sent,) = charity.call{value: msg.value}("");
+        (bool sent, ) = charity.call{value: msg.value}("");
         require(sent, "Failed to send Ether");
 
         _mint(msg.sender, tokenCounter);
 
         // Create metadata for the tokenURI
-        string memory uri = _createTokenURI(msg.sender, block.timestamp, msg.value);
+        string memory uri = _createTokenURI(
+            msg.sender,
+            block.timestamp,
+            msg.value
+        );
         _setTokenURI(tokenCounter, uri);
 
         tokenCounter += 1;
     }
 
-    function _createTokenURI(address donor, uint256 date, uint256 amount) internal pure returns (string memory) {
+    function _createTokenURI(
+        address donor,
+        uint256 date,
+        uint256 amount
+    ) internal pure returns (string memory) {
         // Create JSON metadata
         string memory json = string(
             abi.encodePacked(
@@ -50,7 +58,10 @@ contract GivingThanks is ERC721URIStorage {
         string memory base64Json = Base64.encode(bytes(json));
 
         // Return the data URL
-        return string(abi.encodePacked("data:application/json;base64,", base64Json));
+        return
+            string(
+                abi.encodePacked("data:application/json;base64,", base64Json)
+            );
     }
 
     function updateRegistry(address _registry) public {

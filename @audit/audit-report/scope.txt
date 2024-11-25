@@ -1,0 +1,5 @@
+All Contracts in `src` are in scope.
+
+├── src
+│   ├── CharityRegistry.sol
+│   └── GivingThanks.sol

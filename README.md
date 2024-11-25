@@ -5,7 +5,7 @@
 
 - nSLOC: 67
 
-[//]: # (contest-details-open)
+[//]: # "contest-details-open"
 
 ## About the Project
 
@@ -19,8 +19,8 @@ GivingThanks is a decentralized platform that embodies the spirit of Thanksgivin
 - Charities - Can register to receive donations once verified.
 - Donors - Can donate Ether to verified charities and receive a donation receipt NFT.
 
-[//]: # (contest-details-close)
-[//]: # (scope-open)
+[//]: # "contest-details-close"
+[//]: # "scope-open"
 
 ## Scope (contracts)
 
@@ -35,14 +35,26 @@ All Contracts in `src` are in scope.
 
 ```
 
+## @audit
+
+All Findings in `@audit` and full report.
+
+```js
+├── @audit
+│   ├── audit-report
+│       ├── auditreportforpdf.md
+│       └── auditreportforpdf.pdf
+
+```
+
 ## Compatibilities
 
 Compatibilities:
 Blockchains: - Ethereum/Any EVM
 Tokens: - ETH - ERC721
 
-[//]: # (scope-close)
-[//]: # (getting-started-open)
+[//]: # "scope-close"
+[//]: # "getting-started-open"
 
 ## Setup
 
@@ -62,11 +74,11 @@ Tests:
 Forge test
 ```
 
-[//]: # (getting-started-close)
-[//]: # (known-issues-open)
+[//]: # "getting-started-close"
+[//]: # "known-issues-open"
 
 ## Known Issues
 
 No known issues
 
-[//]: # (known-issues-close)
+[//]: # "known-issues-close"
