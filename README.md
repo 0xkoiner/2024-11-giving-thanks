@@ -1,4 +1,11 @@
 # First Flight #29: TwentyOne
+I’m proud to share that I secured 2nd place with a total of 293 XP!
+
+This milestone is especially meaningful because it’s my second competitive audit, and I can already see the growth and learning from the experience. Diving deep into contract security and uncovering vulnerabilities is both challenging and rewarding.
+
+A huge thank you to the organizers and participants for making this such an exciting and collaborative event.
+
+Onward and upward as I continue honing my skills and contributing to the security of blockchain ecosystems! 
 
 - Starts: November 21, 2024 Noon UTC
 - Ends: November 28, 2024 Noon UTC
