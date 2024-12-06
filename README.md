@@ -1,23 +1,20 @@
-# First Flight #28: GivingThanks
+# First Flight #29: TwentyOne
 
-- Starts: November 07, 2024 Noon UTC
-- Ends: November 14, 2024 Noon UTC
+- Starts: November 21, 2024 Noon UTC
+- Ends: November 28, 2024 Noon UTC
 
-- nSLOC: 67
+- nSLOC: 147
 
 [//]: # "contest-details-open"
 
 ## About the Project
 
-About the Project
-
-GivingThanks is a decentralized platform that embodies the spirit of Thanksgiving by enabling donors to contribute Ether to registered and verified charitable causes. Charities can register themselves, and upon verification by the trusted admin, they become eligible to receive donations from generous participants. When donors make a donation, they receive a unique NFT as a donation receipt, commemorating their contribution. The NFT's metadata includes the donor's address, the date of the donation, and the amount donated.
+The "TwentyOne" protocol is a smart contract implementation of the classic blackjack card game, where users can wager 1 ETH to participate with a chance to double their money!
 
 ## Actors
 
-- Admin (Trusted) - Can verify registered charities.
-- Charities - Can register to receive donations once verified.
-- Donors - Can donate Ether to verified charities and receive a donation receipt NFT.
+- Player: The user who interacts with the contract to start and play a game. A player must deposit 1 ETH to play, with a maximum payout of 2 ETH upon winning.
+- Dealer: The virtual counterpart managed by the smart contract. The dealer draws cards based on game logic.
 
 [//]: # "contest-details-close"
 [//]: # "scope-open"
@@ -29,10 +26,8 @@ All Contracts in `src` are in scope.
 ```
 
 ```js
-├── src
-│   ├── CharityRegistry.sol
-│   └── GivingThanks.sol
-
+src/
+└── TwentyOne.sol
 ```
 
 ## @audit
@@ -51,7 +46,7 @@ All Findings in `@audit` and full report.
 
 Compatibilities:
 Blockchains: - Ethereum/Any EVM
-Tokens: - ETH - ERC721
+Tokens: - ETH
 
 [//]: # "scope-close"
 [//]: # "getting-started-open"
@@ -61,10 +56,10 @@ Tokens: - ETH - ERC721
 Build:
 
 ```bash
-git clone https://github.com/Cyfrin/2024-11-giving-thanks.git
+git clone https://github.com/Cyfrin/2024-11-twentyone.git
 
-cd 2024-11-giving-thanks
-
+cd 2024-11-twentyone
+ 
 forge build
 ```
 
