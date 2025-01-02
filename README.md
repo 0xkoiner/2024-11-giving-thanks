@@ -1,86 +1,44 @@
-# First Flight #29: TwentyOne
-I’m proud to share that I secured 2nd place with a total of 293 XP!
+First Flight #28: GivingThanks
+Starts: November 07, 2024 Noon UTC
 
-This milestone is especially meaningful because it’s my second competitive audit, and I can already see the growth and learning from the experience. Diving deep into contract security and uncovering vulnerabilities is both challenging and rewarding.
+Ends: November 14, 2024 Noon UTC
 
-A huge thank you to the organizers and participants for making this such an exciting and collaborative event.
+nSLOC: 67
 
-Onward and upward as I continue honing my skills and contributing to the security of blockchain ecosystems! 
+About the Project
+About the Project
 
-- Starts: November 21, 2024 Noon UTC
-- Ends: November 28, 2024 Noon UTC
+GivingThanks is a decentralized platform that embodies the spirit of Thanksgiving by enabling donors to contribute Ether to registered and verified charitable causes. Charities can register themselves, and upon verification by the trusted admin, they become eligible to receive donations from generous participants. When donors make a donation, they receive a unique NFT as a donation receipt, commemorating their contribution. The NFT's metadata includes the donor's address, the date of the donation, and the amount donated.
 
-- nSLOC: 147
-
-[//]: # "contest-details-open"
-
-## About the Project
-
-The "TwentyOne" protocol is a smart contract implementation of the classic blackjack card game, where users can wager 1 ETH to participate with a chance to double their money!
-
-## Actors
-
-- Player: The user who interacts with the contract to start and play a game. A player must deposit 1 ETH to play, with a maximum payout of 2 ETH upon winning.
-- Dealer: The virtual counterpart managed by the smart contract. The dealer draws cards based on game logic.
-
-[//]: # "contest-details-close"
-[//]: # "scope-open"
-
-## Scope (contracts)
-
-```
+Actors
+Admin (Trusted) - Can verify registered charities.
+Charities - Can register to receive donations once verified.
+Donors - Can donate Ether to verified charities and receive a donation receipt NFT.
+Scope (contracts)
 All Contracts in `src` are in scope.
-```
+├── src
+│   ├── CharityRegistry.sol
+│   └── GivingThanks.sol
+@audit
+All Findings in @audit and full report.
 
-```js
-src/
-└── TwentyOne.sol
-```
-
-## @audit
-
-All Findings in `@audit` and full report.
-
-```js
 ├── @audit
 │   ├── audit-report
 │       ├── auditreportforpdf.md
 │       └── auditreportforpdf.pdf
+Compatibilities
+Compatibilities: Blockchains: - Ethereum/Any EVM Tokens: - ETH - ERC721
 
-```
-
-## Compatibilities
-
-Compatibilities:
-Blockchains: - Ethereum/Any EVM
-Tokens: - ETH
-
-[//]: # "scope-close"
-[//]: # "getting-started-open"
-
-## Setup
-
+Setup
 Build:
 
-```bash
-git clone https://github.com/Cyfrin/2024-11-twentyone.git
+git clone https://github.com/Cyfrin/2024-11-giving-thanks.git
 
-cd 2024-11-twentyone
- 
+cd 2024-11-giving-thanks
+
 forge build
-```
-
 Tests:
 
-```bash
 Forge test
-```
-
-[//]: # "getting-started-close"
-[//]: # "known-issues-open"
-
-## Known Issues
-
+Known Issues
 No known issues
-
-[//]: # "known-issues-close"
